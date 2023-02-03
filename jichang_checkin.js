@@ -8,7 +8,7 @@ const noti = process.env.JC_NOTI;
 const cookieJar = new CookieJar();
 const log = async (content) => {
   console.log(content);
-  if (noti) await sendNotify(`机场签到 ${url}`, content, (author = ""));
+  if (noti) await sendNotify(`机场签到 ${url}`, content, {}, "");
 };
 async function main() {
   console.log("正在登录...");
