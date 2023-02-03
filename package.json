@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "got-scraping": "^3.2.12"
+    "got-scraping": "^3.2.12",
+    "tough-cookie": "^4.1.2"
   }
 }
