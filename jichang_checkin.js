@@ -8,10 +8,10 @@ const noti = process.env.JC_NOTI;
 const cookieJar = new CookieJar();
 const log = async (content) => {
   console.log(content);
-  if (noti) await sendNotify(`机场签到 ${url}`, content);
+  if (noti) await sendNotify(`机场签到 ${url}`, content, (author = ""));
 };
 async function main() {
-  log("正在登录...");
+  console.log("正在登录...");
   await gotScraping
     .post(new URL("/auth/login", url), {
       json: { email, passwd },
